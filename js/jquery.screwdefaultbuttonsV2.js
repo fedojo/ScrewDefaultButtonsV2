@@ -109,7 +109,7 @@
 					});
 
 					$thisParent.addClass('styledCheckbox');
-					$thisParent.attr('tabindex', '0');
+					$thisParent.attr('tabindex', $this.attr('tabindex') || '0');
 					$thisParent.attr('role', 'checkbox');
 
 					$this.on('change', function(){
